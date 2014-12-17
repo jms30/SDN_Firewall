@@ -16,6 +16,7 @@ It is named inefficient because it is not using Flow Tables extensively to store
 This application uses Flow tables to store flow table entries on switch so that next time packets from that flow won't be forwarded to the controller. Hence, compared to previous case, this files are efficient in terms of packet exchange.
 
 Stateful and Stateless firewalls can also be implemented on SDN Controller. 
+
 1) Stateful firewall:
 In this type of firewall, we keep the states of the seen packets. These states are maintained in order to detect the flow of the packet exchange. So that next time when a packet is received by the controller, controller will check the packet with the maintained states to match the packet with particular ongoing connection. Hence, the firewall keeps track of the connections itself.
 
